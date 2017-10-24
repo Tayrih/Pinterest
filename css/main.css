@@ -1,7 +1,6 @@
 /*setear micss*/
 
 body {
-
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -13,6 +12,14 @@ header {
   position: relative;
 }
 
+nav{
+  background-color: white;
+  min-height: 130px;
+  top: 0px;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+}
 
 .box-header {
   display: inline-block;
@@ -20,72 +27,25 @@ header {
 }
 
 .logo-header {
-  margin-top: 20px;
-  position: absolute;
-  width: 45px;
-
+  width: 40px;
+  float: left;
+  margin-left: 30px;
 }
 
-ul li{
-  display: inline;
-  list-style: none;
-  margin: 5px;
-}
-
-
-.icons-bar {
-  position: absolute;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-.icons-right {
-  color: #b5b5b5;
-  display: block;
-  position: absolute;
-  right: 10px;
-
-
-}
-
-.bar-header {
-
-  background-color: #EFEFEF;
-  border-radius: 5px;
-  margin: 0 16px;
-  padding: 10px;
-  position: absolute;
-  width: 70%;
-  margin-left: 100px;
-
-}
-
-.bar-header div {
-  display: inline-block;
-
-}
-input {
-
-   border: none;
-   font-size: 18px;
-   outline: 0;
-   background-color: transparent;
- }
-
- .menus {
-   margin: 0;
-   top: 30%;
-   margin: 10px 0 10px 0;
-   transform: translateY(-50%);
+.menus {
+   display: block;
+   width: 100%;
+   min-height: 70px;
+   margin: 5px;
+   border-bottom: 1px solid #d3d3d3;
  }
  .sub-menu {
-   position: absolute;
-   margin: 20px;
-   top: 100%;
-   left:8%;
-   transform: translateY(350%);
-
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 0px 12% 0px 12%;
+  font-weight: bold;
+  padding: 0 5%;
 
  }
 
@@ -99,6 +59,62 @@ input {
   padding: 20px;
 }
 
+ul li{
+  display: block;
+  float: left;
+  list-style: none;
+  margin: 5px;
+}
+
+.bar-header {
+  background-color: #EFEFEF;
+  border-radius: 5px;
+  margin: 0 16px;
+  padding: 8px;
+  display: block;
+  float: left;
+  margin-left: 20px;
+  width: 70%;
+}
+
+.bar-header div {
+  display: inline-block;
+}
+.search{
+  width: 90%;
+  height: 20px;
+  padding: 2px 30px;
+}
+.icons-bar {
+  font-weight: bold;
+  display: block;
+  float: right;
+  right: 40px;
+  top: 50%;
+
+}
+
+.icons-right {
+  width: 15%;
+  color: #b5b5b5;
+  float: left;
+  display: block;
+  padding: auto auto;
+}
+
+.icons-right span{
+  font-size: 1.5em;
+  margin: 0px 15px;
+}
+
+
+input {
+
+   border: none;
+   font-size: 18px;
+   outline: 0;
+   background-color: transparent;
+ }
 
 
 .boton1 {
@@ -168,17 +184,18 @@ input {
 .post{
 	display: inline-block;
   position: relative;
+  margin: 5px;
 }
 /*fincolumnas*/
 
 /*contenido imagenes*/
 .circle {
-  height: 30px;
+  height: 5px;
   width: 30px;
   border-radius: 2000px;
   background-color: #d597a1;
   box-sizing: border-box;
-  padding-top: 6px;
+  padding-top: 0px;
   margin: 0;
   text-align: center;
   color: #fff;
@@ -208,6 +225,11 @@ input {
   position: absolute;
   color:  #C5C2C2;
 
+}
+
+.post img{
+  width: 100%;
+  border-radius: 25px;
 }
 
 /*fin contenido imagenes*/
